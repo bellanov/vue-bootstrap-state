@@ -26,7 +26,7 @@ resource "google_cloud_run_service" "vue-bootstrap-cloudrun-dev" {
     spec {
       containers {
 
-        image = "us-docker.pkg.dev/vue-bootstrap-dev/releases/vue-bootstrap:v1.0.14"
+        image = "us-docker.pkg.dev/vue-bootstrap-dev/releases/vue-bootstrap:v1.1.0"
 
         ports {
           container_port = 80
