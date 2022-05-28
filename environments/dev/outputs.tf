@@ -1,7 +1,6 @@
 
-
-# Cloud Run
-output "vue_bootstrap_cloudrun_dev" {
-  description = "Cloud Run - Dev."
-  value       = google_cloud_run_service.vue-bootstrap-cloudrun-dev
+# Cloud Run Service
+output "vue_bootstrap_cloudrun_env" {
+  description = "Cloud Run - Environment."
+  value       = "${module.cloud_run_service}"
 }
