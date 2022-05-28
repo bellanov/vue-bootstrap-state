@@ -10,7 +10,7 @@ data "google_project" "vue-bootstrap-env" {
 # Deploy Cloud Run Service
 resource "google_cloud_run_service" "vue-bootstrap-cloudrun-env" {
   name     = "${var.environment}"
-  location = "us-central1"
+  location = "${var.location}"
   project = "${var.project}"
 
   template {
