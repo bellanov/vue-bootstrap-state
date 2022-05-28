@@ -12,7 +12,8 @@ terraform {
 }
 
 module "cloud_run_service" {
-  source  = "../../modules/cloud_run_service"
-  project = "${var.project}"
-  environment  = "vue-bootstrap-dev"
+  source       = "../../modules/cloud_run_service"
+  project      = "${var.project}"
+  environment  = "${var.environment}"
+  image        = "${var.image}"
 }
