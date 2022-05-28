@@ -16,4 +16,5 @@ module "cloud_run_service" {
   project      = "${var.project}"
   environment  = "${var.environment}"
   image        = "${var.image}"
+  location     = "${var.location}"
 }
